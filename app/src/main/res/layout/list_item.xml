@@ -17,20 +17,26 @@
 
     <TextView
         android:id="@+id/TextViewCall"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/normalDP"
+        android:layout_marginEnd="@dimen/normalDP"
         android:text="@string/call"
+        app:layout_constraintEnd_toStartOf="@+id/ButtonRemove"
         app:layout_constraintStart_toEndOf="@+id/ImageViewIcon"
         app:layout_constraintTop_toTopOf="@+id/ImageViewIcon" />
 
     <TextView
         android:id="@+id/TextViewContact"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/normalDP"
+        android:layout_marginEnd="@dimen/normalDP"
         android:hint="@string/contact"
+        android:ellipsize="end"
+        android:maxLines="1"
         app:layout_constraintBottom_toBottomOf="@+id/ImageViewIcon"
+        app:layout_constraintEnd_toStartOf="@+id/ButtonRemove"
         app:layout_constraintStart_toEndOf="@+id/ImageViewIcon" />
 
     <Button
